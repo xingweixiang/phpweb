@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=yes">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="shortcut icon" type="image/x-icon" href="/templets/default/images/cpgwimages/favicon.ico" />
+<!--ico-->
+<link rel="stylesheet" type="text/css" href="/skin/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/animate.min.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/owl.carouse.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/responsive.css" />
+<script src="/skin/js/jquery-1.11.0.min.js"></script>
+<script src="/skin/js/wow.min_1.js"></script>
+<script src="/skin/js/owl.carousel.min.js"></script>
+<script src="/skin/js/page.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="page">
+<div class="rowFluid">
+<div class="span12">
+<div class="main">
+<div class="z_banner">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="container">
+        <h3 class="z_banner_title">互联网+时代 你还没准备?</h3>
+        <div class="z_banner_text">高逼格，你也可以拥有，织梦58引领网站新风尚</div>
+      </div>
+      <ul class="platform_advantage_bg_z">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="support_type">
+<div class="rowFluid">
+<div class="span12">
+  <div class="container">
+    <div class="support_type_content"> {dede:channel type='son' currentstyle="
+      <div class='span2 col-xs-4'><a href='~typelink~' class='support_type_list active'>~typename~</a></div>
+      "}
+      <div class="span2 col-xs-4"> <a href="[field:typelink/]" class="support_type_list normal" title="[field:typename/]">[field:typename/]</a> </div>
+      {/dede:channel} </div>
+  </div>
+</div>
+<div class="case_show">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="container">
+        <div class="case_show_content"> {dede:list pagesize ='10' channelid='17'}
+          <div class="case_show_list wow fadeInUp">
+            <div class="span7 col-xm-6 col-sm-12">
+              <div class="case_show_pic"><img src="[field:picname/]" alt="[field:title/]" /></div>
+            </div>
+            <div class="span5 col-xm-6 col-sm-12">
+              <div class="case_show_brief">
+                <h3 class="case_show_brief_title"><span></span>[field:title/]</h3>
+                <div class="case_show_brief_text">
+                  <p>[field:description function="cn_substr(@me,400)"/]...</p>
+                </div>
+                <div class="case_show_brief_button"> <a href="[field:wz/]" title="[field:title/]" class=" all_button" target="_blank">查看站点</a> </div>
+              </div>
+            </div>
+          </div>
+          {/dede:list} </div>
+        <div class="know_more wow fadeInUp">
+          <div class="know_more_text">了解更多建站服务或加盟事宜，敬请联系</div>
+          <a target="_blank" class="all_button" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.zxqq/}&site=qq&menu=yes" title="响应式建站咨询">建站咨询</a> <a target="_blank" class="all_button" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.zxqq/}&site=qq&menu=yes" title="建站平台加盟咨询">加盟咨询</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

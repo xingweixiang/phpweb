@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=yes">
+<title>搜索页_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="renderer" content="webkit">
+<!--ico-->
+<link rel="stylesheet" type="text/css" href="/skin/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/animate.min.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/responsive.css" />
+<script src="/skin/js/jquery-1.11.0.min.js"></script>
+<script src="/skin/js/wow.min_1.js"></script>
+<script src="/skin/js/owl.carousel.min.js"></script>
+<script src="/skin/js/page.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="page">
+  <div class="rowFluid">
+    <div class="span12">
+      <div class="main">
+        <div class="z_banner support_z_banner">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="container">
+                <h3 class="z_banner_title">搜索页</h3>
+                <div class="z_banner_text"> 这里有您想知道的最新资讯与动态 </div>
+              </div>
+              <ul class="platform_advantage_bg_z">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="support_type">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="container">
+                <div class="support_type_content">
+                  <div class="kzf-mod-center"> {dede:channel type='son' currentstyle="
+                    <div class='span2 col-xs-4'><a href='~typelink~' class='support_type_list active'>~typename~</a></div>
+                    "}
+                    <div class="span2 col-xs-4"> <a href="[field:typelink/]" class="support_type_list normal" title="[field:typename/]">[field:typename/]</a> </div>
+                    {/dede:channel} </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kzf-mod-new-container">
+          <div class="rowFluid">
+            <div class="span12">
+              <div class="container" id="newslist"> {dede:list pagesize='20'}
+                <div class="rowFluid"> <a href="[field:arcurl/]">
+                  <div class="kzf-mod-new-li">
+                    <div class="span2">
+                      <div class="kzf-mod-new-time-box">
+                        <div class="kzf-mod-new-time-date"><span>[field:pubdate function=strftime('%m',@me)/]</span>/<span>[field:pubdate function=strftime('%d',@me)/]</span></div>
+                        <div class="kzf-mod-new-time-year">[field:pubdate function='strftime("%Y",@me)'/]</div>
+                      </div>
+                    </div>
+                    <div class="span10">
+                      <div class="kzf-mod-new-box">
+                        <div class="kzf-mod-new-title">[field:title/]</div>
+                        <div class="kzf-mod-new-text"> [field:description function='cn_substr(@me,180)'/]</div>
+                      </div>
+                    </div>
+                  </div>
+                  </a> </div>
+                {/dede:list} </div>
+              <div class="kzf-mod-new-btn-more"> {dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/} </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

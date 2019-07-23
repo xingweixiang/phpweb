@@ -1,0 +1,6 @@
+INSERT INTO `dede_addon18` VALUES('9','9','','','127.0.0.1','http://www.dede58.com/');
+INSERT INTO `dede_addon18` VALUES('10','9','','','127.0.0.1','http://www.dede58.com');
+INSERT INTO `dede_addon18` VALUES('26','9','','','127.0.0.1','http://www.dede58.com');
+INSERT INTO `dede_addon18` VALUES('27','9','','','127.0.0.1','http://www.dede58.com');
+INSERT INTO `dede_addon18` VALUES('28','9','','','127.0.0.1','http://www.dede58.com');
+INSERT INTO `dede_addon18` VALUES('29','9','','','127.0.0.1','http://www.dede58.com');

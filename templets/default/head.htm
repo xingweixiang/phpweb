@@ -1,0 +1,53 @@
+<div class="header">
+  <div class="rowFluid">
+    <div class="span2 col-md-12">
+      <div class="logo"> <a href="/" title="返回首页"> <img src="/skin/images/logo.png" alt="{dede:global.cfg_webname/}" /> </a> </div>
+    </div>
+    <div class="span8">
+      <div class="mobileMenuBtn"><span class="span1"></span><span class="span2"></span><span class="span3"></span></div>
+      <div class="mobileMenuBtn_shad"></div>
+      <div class="header_menu">
+        <ul id="menu">
+          <li><a href="/" {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='active' ":@me="";{/dede:field} title="首页">首页</a></li>
+          {dede:channel type='top' currentstyle="
+          <li><a href='~typelink~' class='active'>~typename~</a></li>
+          "}
+          <li><a href="[field:typeurl/]" title="[field:typename/]">[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+      </div>
+    </div>
+    <div class="span2"> </div>
+  </div>
+</div>
+<div class="aside">
+  <ul>
+    <li> {dede:type typeid='9'} <a href="[field:typelink/]" target="_blank" title="合作"><img src="/skin/images/057.png" alt="合作" />合作</a>{/dede:type} </li>
+    <li class="consulting"><a href="#this" title="建站在线客服"><span></span><span></span><span></span><img src="/skin/images/059.png" class="img1" alt="建站在线客服" /><img src="/skin/images/061.png" class="img2" alt="建站在线客服" />咨询</a></li>
+    <li> {dede:type typeid='14'} <a href="[field:typelink/]"><img src="/skin/images/060.png" alt="建站帮助中心" />帮助</a>{/dede:type} </li>
+  </ul>
+</div>
+<div class="consulting_box">
+  <div class="title">
+    <div class="title_t1">RELATEED CONSULTING</div>
+    <div class="title_t2">相关咨询 </div>
+  </div>
+  <div class="consulting_type">
+    <div class="consulting_type_title">选择下列产品马上在线沟通</div>
+    <ul>
+      <li> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.zxqq/}&site=qq&menu=yes" title="响应式建站咨询"> <img src="/skin/images/062.png" class="img1" alt="网站建设" /><img src="/skin/images/063.png" class="img2" alt="响应式网站咨询" />建站咨询 </a> </li>
+      <li> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.zxqq/}&site=qq&menu=yes" title="建站平台加盟咨询"> <img src="/skin/images/062.png" class="img1" alt="建站平台" /><img src="/skin/images/063.png" class="img2" alt="建站平台代理咨询" />加盟咨询 </a> </li>
+      <li> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={dede:global.zxqq/}&site=qq&menu=yes" title="响应式网站定制"> <img src="/skin/images/062.png" class="img1" alt="响应式网站定制" /><img src="/skin/images/063.png" class="img2" alt="响应式网站定制" />定制咨询 </a> </li>
+    </ul>
+    <div class="time">服务时间：9:30-18:00</div>
+  </div>
+  <div class="problem">
+    <div class="problem_title">你可能遇到了下面的问题</div>
+    <ul>
+      {dede:arclist row='5'  typeid='14'  titlelen='58'}
+      <li><span></span><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+      {/dede:arclist}
+    </ul>
+  </div>
+  <div class="close"> <img src="/skin/images/close.png" alt="关闭右侧工具栏" /> </div>
+</div>
